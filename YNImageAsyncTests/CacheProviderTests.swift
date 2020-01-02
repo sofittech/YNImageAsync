@@ -20,7 +20,7 @@ class CacheProviderTests: XCTestCase {
         cacheProvider?.clearCache()
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                if let imageData = UIImageJPEGRepresentation(image, 0.9) {
+                if let imageData = image.jpegData(compressionQuality: 0.9) {
                     let exp = expectation(description: img)
                     cacheProvider?.cacheData(img, imageData, completion: { (success) -> (Void) in
                         exp.fulfill()
@@ -125,7 +125,7 @@ class CacheProviderTests: XCTestCase {
         provider.configuration.options = .memory
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                let imageData = UIImageJPEGRepresentation(image, 0.9)
+                let imageData = image.jpegData(compressionQuality: 0.9)
                 cacheProvider?.cacheDataToMemory(img, imageData!)
             }
         }
@@ -139,7 +139,7 @@ class CacheProviderTests: XCTestCase {
 
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                let imageData = UIImageJPEGRepresentation(image, 0.9)
+                let imageData = image.jpegData(compressionQuality: 0.9)
                 cacheProvider?.cacheDataToMemory(img, imageData!)
             }
         }
@@ -160,7 +160,7 @@ class CacheProviderTests: XCTestCase {
         provider.configuration.options = .memory
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                let imageData = UIImageJPEGRepresentation(image, 0.9)
+                let imageData = image.jpegData(compressionQuality: 0.9)
                 cacheProvider?.cacheDataToMemory(img, imageData!)
             }
         }
@@ -174,7 +174,7 @@ class CacheProviderTests: XCTestCase {
         
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                let imageData = UIImageJPEGRepresentation(image, 0.9)
+                let imageData = image.jpegData(compressionQuality: 0.9)
                 cacheProvider?.cacheDataToMemory(img, imageData!)
             }
         }
@@ -228,8 +228,8 @@ class CacheProviderTests: XCTestCase {
         var calculatedSize : Int64 = 0
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                if let imageData = UIImageJPEGRepresentation(image, 0.9) {
-                    calculatedSize += imageData.count
+                if let imageData = image.jpegData(compressionQuality: 0.9) {
+                    calculatedSize += Int64(imageData.count)
                 }
             }
         }
@@ -250,8 +250,8 @@ class CacheProviderTests: XCTestCase {
         var calculatedSize : Int64 = 0
         for img in imageNames {
             if let image = UIImage(named: img, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                if let imageData = UIImageJPEGRepresentation(image, 0.9) {
-                    calculatedSize += imageData.count
+                if let imageData = image.jpegData(compressionQuality: 0.9) {
+                    calculatedSize += Int64(imageData.count)
                 }
             }
         }
@@ -389,7 +389,7 @@ class CacheProviderTests: XCTestCase {
         let url = URL(fileURLWithPath: filePath)
 
         if let image = UIImage(named: file, in: Bundle(for: type(of: self)), compatibleWith: nil) {
-            if let imageData = UIImageJPEGRepresentation(image, 0.9) {
+            if let imageData = image.jpegData(compressionQuality: 0.9) {
                 provider.saveCache(cacheData: imageData, fileUrl: url)
                 let files = provider.cacheFolderFiles()
                 XCTAssertTrue(files.count == 1)
