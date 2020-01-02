@@ -370,18 +370,18 @@
 				TargetAttributes = {
 					0626EA5D1DB2316C000DC212 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Manual;
 					};
 					0626EA661DB2316C000DC212 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = DA3G8859P7;
-						LastSwiftMigration = 1010;
+						DevelopmentTeam = 64FY7Y58D6;
+						LastSwiftMigration = 1120;
 					};
 					062AC0021A0827E000744325 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = DA3G8859P7;
-						LastSwiftMigration = 1010;
+						DevelopmentTeam = 64FY7Y58D6;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,6 +391,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -543,7 +544,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -572,7 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -583,7 +584,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DA3G8859P7;
+				DEVELOPMENT_TEAM = 64FY7Y58D6;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = YNImageAsyncTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -591,7 +592,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yn.YNImageAsyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -601,7 +602,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DA3G8859P7;
+				DEVELOPMENT_TEAM = 64FY7Y58D6;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = YNImageAsyncTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -609,7 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yn.YNImageAsyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -708,15 +709,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DA3G8859P7;
+				DEVELOPMENT_TEAM = 64FY7Y58D6;
 				INFOPLIST_FILE = "Demo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YN.Demo.yy;
+				PRODUCT_BUNDLE_IDENTIFIER = YN.Demo.yynn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -728,15 +729,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DA3G8859P7;
+				DEVELOPMENT_TEAM = 64FY7Y58D6;
 				INFOPLIST_FILE = "Demo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YN.Demo.yy;
+				PRODUCT_BUNDLE_IDENTIFIER = YN.Demo.yynn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
